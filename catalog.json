@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "name": "math-slop",
+  "description": "数学中间成果、可读证明与 Lean 形式化核验的公开发布目录。",
+  "repository_url": "https://github.com/TaiRuiQu/math-slop",
+  "default_branch": "main",
+  "site_url": "https://tairuiqu.github.io/math-slop/",
+  "results": [
+    {
+      "id": "01-prescribed-s-width",
+      "title": "指定无零宽度的李–刘谱假设 S 反例",
+      "english_title": "Counterexamples to prescribed zero-free widths for the Li–Liu spectral hypothesis S",
+      "description": "在全局 Dirichlet GRH 下，为李–刘残差算子证明二阶范数下界，据此构造两类指定无零宽度的反例，并给出奇异级数趋近最小值且有许多哥德巴赫表示的反例子族。",
+      "manuscript": "readable/01-prescribed-s-width.md",
+      "language": "zh-CN",
+      "assumptions": [
+        "全局 Dirichlet 广义黎曼假设（GRH）"
+      ],
+      "keywords": [
+        "解析数论",
+        "哥德巴赫猜想",
+        "广义黎曼假设",
+        "李–刘谱假设 S",
+        "Dirichlet GRH",
+        "Goldbach conjecture",
+        "Li–Liu spectral hypothesis",
+        "Lean 4"
+      ],
+      "claims": [
+        {
+          "id": "operator-norm",
+          "title": "李–刘算子范数的二阶下界",
+          "summary": "在全局 Dirichlet GRH 下，对任意固定 $c>0$，证明每个充分大的 $[X,2X]$ 至少有 $\\sqrt X\\exp(c\\sqrt{\\log X})$ 个偶数满足李–刘算子范数的二阶下界，二阶系数为 $2+\\log 2$。"
+        },
+        {
+          "id": "first-width",
+          "title": "首阶指定宽度反例",
+          "summary": "在全局 Dirichlet GRH 下，证明谱假设 $S_h$ 对预先指定的 $h(N)=\\sqrt N\\exp(-d\\sqrt{\\log N}/\\log\\log N)$ 失败，覆盖所有固定 $0<d\\le\\sqrt2$。"
+        },
+        {
+          "id": "second-width",
+          "title": "二阶指定宽度反例",
+          "summary": "在全局 Dirichlet GRH 下，证明谱假设 $S_h$ 对 $h(N)=\\sqrt N\\exp[-(\\sqrt{2\\log N}/\\log\\log N)(1+d/\\log\\log N)]$ 失败，覆盖所有固定 $d<2+\\log 2$。"
+        },
+        {
+          "id": "near-minimal-series",
+          "title": "奇异级数趋近最小值的反例子族",
+          "summary": "在全局 Dirichlet GRH 下，构造每个充分大的 $[X,2X]$ 内至少有 $\\sqrt X\\exp(c\\log X/(\\log\\log X)^4)$ 个成员的反例子族（某个 $c>0$），其奇异级数趋于 $2C_2$，每个成员有至少 $\\exp((1/\\sqrt2-o(1))\\sqrt{\\log N})$ 个较小素数满足 $\\log p\\sim\\sqrt{2\\log N}$ 的哥德巴赫表示。"
+        }
+      ],
+      "lean": {
+        "status": "partial",
+        "verification": "lean/verification/01-prescribed-s-width.md",
+        "entrypoint": "lean/PrescribedSWidth.lean",
+        "source_directory": "lean/PrescribedSWidth"
+      }
+    }
+  ]
+}

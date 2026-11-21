@@ -1,0 +1,13 @@
+# math-slop
+
+> 数学中间成果、可读证明与 Lean 形式化核验的公开发布目录。
+
+[JSON 成果目录](https://raw.githubusercontent.com/TaiRuiQu/math-slop/main/catalog.json)列出编号、逐条命题、数学假设和核验状态。
+
+## 可读证明
+
+- [指定无零宽度的李–刘谱假设 S 反例](https://raw.githubusercontent.com/TaiRuiQu/math-slop/main/readable/01-prescribed-s-width.md): 在全局 Dirichlet GRH 下，为李–刘残差算子证明二阶范数下界，据此构造两类指定无零宽度的反例，并给出奇异级数趋近最小值且有许多哥德巴赫表示的反例子族。
+
+## Lean 核验记录
+
+- [指定无零宽度的李–刘谱假设 S 反例](https://raw.githubusercontent.com/TaiRuiQu/math-slop/main/lean/verification/01-prescribed-s-width.md): Lean 部分核验。

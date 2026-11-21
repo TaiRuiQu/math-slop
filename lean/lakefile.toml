@@ -1,0 +1,11 @@
+name = "prescribed-s-width"
+defaultTargets = ["PrescribedSWidth"]
+
+[[require]]
+name = "conditionalGoldbach"
+git = "https://github.com/subfish-zhou/conditional-goldbach-lean.git"
+rev = "c55db645f3b4aed00374fe4aa1fcee2428c88c4b"
+subDir = "formalization"
+
+[[lean_lib]]
+name = "PrescribedSWidth"
